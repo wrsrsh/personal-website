@@ -8,10 +8,10 @@
 	</ul>
 
 	<ul class="flex space-x-4">
-		<HeaderLink href="/whoamai" text="whoami" />
+		<!-- <HeaderLink href="/whoami" text="whoami" /> -->
 		<HeaderLink href="/essays" text="essays" />
-		<HeaderLink href="/asend" text="asend" />
-		<HeaderLink href="/quotes" text="quotes" />
-		<HeaderLink href="https://linkedin.com/in/wrsrsh" text="linkedin" />
+		<HeaderLink href="/bio" text="bio" />
+		<HeaderLink href="/work" text="work" />
+		<HeaderLink href="https://linkedin.com/in/wrsrsh" text="ln" />
 	</ul>
 </div>
