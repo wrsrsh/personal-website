@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
 :root {
-    font-family: "Geist" !important;
+	font-family: 'Geist' !important;
+	background-color: #080301fe;
 }

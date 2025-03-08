@@ -22,17 +22,19 @@
 			alt="NASA APOD"
 			width="100"
 			height="100"
-			class="h-[80vh] w-full object-cover shadow-2xl"
+			class="h-full w-full rounded-md object-cover"
 		/>
-		<div class="flex h-full flex-col gap-3 rounded-xs border p-3">
+		<div class="flex h-full flex-col gap-3 rounded-xs p-3">
 			<p class="flex flex-col">
-				<span class="text-sm text-gray-800">[image of the day]</span>
+				<span class="text-sm text-gray-500 select-none">[image of the day]</span>
 				<span class="">{data.data.title}</span>
 			</p>
 			<div class="pr-2 text-sm">
-				<span class="text-gray-800">[explanation]: {data.data.explanation}</span>
+				<p class="text-gray-100">
+					<span class="text-gray-500 select-none">[explanation]: {" "}</span>{data.data.explanation}
+				</p>
 			</div>
-			<p class="flex flex-col text-sm text-gray-800">
+			<p class="flex flex-col text-sm text-gray-500 select-none">
 				<span>
 					[copyright]: {data.data.copyright}
 				</span>
@@ -40,14 +42,15 @@
 					[image] <a
 						href={data.data.hdurl}
 						target="_blank"
-						class="underline-offset-4 hover:underline">{new URL(data.data.hdurl).hostname}</a
+						class="underline-offset-4 hover:text-gray-100 hover:underline"
+						>{new URL(data.data.hdurl).hostname}</a
 					>
 				</span>
 				<span>
 					[source]: <a
 						href="https://nasa.gov"
 						target="_blank"
-						class="underline-offset-4 hover:underline">nasa.gov</a
+						class="underline-offset-4 hover:text-gray-100 hover:underline">nasa.gov</a
 					>
 				</span>
 			</p>
